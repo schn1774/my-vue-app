@@ -1,5 +1,7 @@
 <script setup>
 import {useRoute, useRouter} from 'vue-router'
+import mealType from "../MOCK_DATA.js";
+import {onMounted} from "vue";
 
 const router = useRouter()
 const route = useRoute()
@@ -27,29 +29,43 @@ defineProps({
   }
 })
 
-const goToRecipePages = (id) => {
+const goToDetail = (id) => {
   router.push({
-    name: 'RecipePages',
+    name: 'RecipeDetail',
     params: {
       id: id
     },
   })
 }
+
+const paramId = route.params.id;
+const recipe = mealType.data.filter(mealType => mealType.id === paramId)[0]
+
+onMounted(() => {
+  if (!recipe) {
+    router.push({
+      name: 'Home'
+    })
+  }
+})
+
 </script>
 
 <template>
-  <div class="wrapper" @click="goToRecipePages(recipe.id)">
-    <img :src="'../../src/assets/' + recipeImg" alt="img"/>
-    <h3>{{ recipeName }}</h3>
 
-    <div id="info" class="info">
-      <div class="item"><h3>Prep time:</h3>
-        <p>{{ prepTime }}</p></div>
-      <div class="item"><h3>Cook time:</h3>
-        <p>{{ cookTime }}</p></div>
-      <div class="item"><h3>Servings:</h3>
-        <p>{{ servings }}</p></div>
-    </div>
+  <div class="wrapper" @click="goToDetail (mealType.id)">
+  <img :src="'../../src/assets/' + recipeImg" alt="img"/>
+  <h3>{{ recipeName }}</h3>
+
+  <div id="info" class="info">
+    <div class="item"><h3>Prep time:</h3>
+      <p>{{ prepTime }}</p></div>
+    <div class="item"><h3>Cook time:</h3>
+      <p>{{ cookTime }}</p></div>
+    <div class="item"><h3>Servings:</h3>
+      <p>{{ servings }}</p></div>
+  </div>
+
   </div>
 </template>
 
@@ -57,7 +73,6 @@ const goToRecipePages = (id) => {
 #info {
   display: none;
 }
-
 div {
   text-align: center;
 

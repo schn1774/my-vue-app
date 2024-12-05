@@ -6,18 +6,18 @@ import data from "../MOCK_DATA.js";
 import {useRoute, useRouter} from 'vue-router';
 import {onMounted} from "vue";
 
-const route = useRoute();
-const router = useRouter();
-const paramId = route.params.id;
-const recipe = mealType.data.filter(mealType => mealType.id === paramId)[0]
-
-onMounted(() => {
-  if (!recipe) {
-    router.push({
-      name: 'Home'
-    })
-  }
-})
+// const route = useRoute();
+// const router = useRouter();
+// const paramId = route.params.id;
+// const recipe = mealType.data.filter(mealType => mealType.id === paramId)[0]
+//
+// onMounted(() => {
+//   if (!recipe) {
+//     router.push({
+//       name: 'Home'
+//     })
+//   }
+// })
 
 </script>
 

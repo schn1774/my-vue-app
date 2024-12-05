@@ -8,6 +8,7 @@ const recipes = recipesFile.data
 const dinnerRecipes = recipes.filter(recipe => recipe.mealType === 'Dinner');
 const breakfastRecipes = recipes.filter(recipe => recipe.mealType === 'Breakfast');
 const dessertRecipes = recipes.filter(recipe => recipe.mealType === 'Dessert');
+
 </script>
 
 <template>

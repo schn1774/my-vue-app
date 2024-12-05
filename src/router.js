@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
-import RecipePages from "./components/RecipePages.vue";
 import SortedRecipes from "./components/SortedRecipes.vue";
 import RecipeCategory from "./components/RecipeCategory.vue";
+import RecipeDetail from "./components/RecipeDetail.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,11 +37,11 @@ const router = createRouter({
             name: 'Recipes',
             children: [
                 {
-                    path: 'details/:id',
-                    name: 'RecipePages',
-                    component: RecipePages,
+                    path: 'recipe/:id',
+                    name: 'RecipeDetail',
+                    component: RecipeDetail,
                     meta: {
-                        title:'Recipe Pages',
+                        title:'Recipe Details',
                     }
                 }
             ]

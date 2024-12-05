@@ -1,5 +1,6 @@
 <script setup>
 import RecipeCard from "./RecipeCard.vue";
+import { useRouter } from "vue-router";
 
 defineProps({
   mealType: {
@@ -11,7 +12,6 @@ defineProps({
     required: true,
   }
 });
-
 </script>
 
 <template>
