@@ -1,20 +1,21 @@
 <script setup>
-import { onMounted } from "vue";
+import {onMounted} from "vue";
 import recipes from "../MOCK_DATA.js";
-import {useRoute} from "vue-router";
+import helpers from "../utils/helpers.js";
+import {useRoute, useRouter} from "vue-router";
 import RecipeCard from "./RecipeCard.vue";
-
-
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
-import MOCK_DATA from "../MOCK_DATA.js";
 
-const router = useRoute();
+const router = useRouter();
 const route = useRoute();
-const paramId = Number(route.params.id);
-const recipe = recipes.data.filter(recipe => recipe.id === paramId)[0]
+const paramRecipeName = route.params.recipeName
+
+const recipe = recipes.data.filter(recipe => helpers.strToLowerDashed(recipe.recipe_name) === paramRecipeName)[0]
+
+console.log('recipe: ', recipe)
 
 onMounted(() => {
-  if (!recipe.value) {
+  if (!recipe) {
     router.push({
       name: 'Home'
     })

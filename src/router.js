@@ -32,19 +32,17 @@ const router = createRouter({
             }
         },
         {
-            path: '/:RecipeName',
+            path: '/recipe/:recipeName',
             name: 'RecipeDetail',
             component: RecipeDetail,
-            props: true,
             meta: {
                 title: 'Recipe Details',
             }
         },
         {
-            path: "/:mealType",
+            path: "/meal-type/:mealType",
             name: "RecipeCategory",
             component: RecipeCategory,
-            props: true,
             meta: {
                 title: "Recipe Category",
             },

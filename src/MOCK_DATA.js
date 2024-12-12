@@ -1,13 +1,12 @@
 const data = [
     {
         "id": "1",
-        "mealType": "Dinner",
+        "mealType": "dinner",
         "recipe_name": "Copy Cat PF Chang Lettuce Wraps",
         "prep_time": "5 min",
         "cook_time": "20 min",
         "servings": "4 servings",
         "recipeImg": "pf-chang-wraps.png",
-
         ingredients: [
             "3 TBS hoisin sauce",
             "2 TBS soy sauce, or tamari",
@@ -33,12 +32,11 @@ const data = [
             serving: "1g",
             calories: "262kcal",
             carbohydrates: "16g",
-
         }
     },
     {
         "id": "2",
-        "mealType": "Dinner",
+        "mealType": "dinner",
         "recipe_name": "Air Fryer Sesame Chicken",
         "prep_time": "15 min",
         "cook_time": "20 min",

@@ -2,11 +2,12 @@
 import {useRoute, useRouter} from 'vue-router'
 import mealType from "../MOCK_DATA.js";
 import {onMounted} from "vue";
+import helpers from "../utils/helpers.js";
 
 const router = useRouter()
 const route = useRoute()
 
-defineProps({
+const props = defineProps({
   recipeName: {
     type: Object,
     required: true
@@ -29,42 +30,41 @@ defineProps({
   }
 })
 
-const goToDetail = (id) => {
+const goToDetail = (recipeName) => {
   router.push({
-    name: 'recipeDetail',
+    name: 'RecipeDetail',
     params: {
-      id: id
+      recipeName: helpers.strToLowerDashed(recipeName)
     },
   })
 }
 
-const paramId = route.params.id;
-const recipe = mealType.data.filter(mealType => mealType.id === paramId)[0]
-
-onMounted(() => {
-  if (!recipe) {
-    router.push({
-      name: 'Home'
-    })
-  }
-})
-
+// const paramId = route.params.id;
+// const recipe = mealType.data.filter(mealType => mealType.id === paramId)[0]
+//
+// onMounted(() => {
+//   if (!recipe) {
+//     router.push({
+//       name: 'Home'
+//     })
+//   }
+// })
 </script>
 
 <template class="recipe-card">
 
-  <div class="wrapper" @click.native="goToDetail(mealType.id)">
-  <img :src="'../../src/assets/' + recipeImg" alt="img"/>
-  <h3>{{ recipeName }}</h3>
+  <div class="wrapper" @click="goToDetail(recipeName)">
+    <img :src="'../../src/assets/' + recipeImg" alt="img"/>
+    <h3>{{ recipeName }}</h3>
 
-  <div id="info" class="info">
-    <div class="item"><h3>Prep time:</h3>
-      <p>{{ prepTime }}</p></div>
-    <div class="item"><h3>Cook time:</h3>
-      <p>{{ cookTime }}</p></div>
-    <div class="item"><h3>Servings:</h3>
-      <p>{{ servings }}</p></div>
-  </div>
+    <div id="info" class="info">
+      <div class="item"><h3>Prep time:</h3>
+        <p>{{ prepTime }}</p></div>
+      <div class="item"><h3>Cook time:</h3>
+        <p>{{ cookTime }}</p></div>
+      <div class="item"><h3>Servings:</h3>
+        <p>{{ servings }}</p></div>
+    </div>
 
   </div>
 </template>
@@ -73,6 +73,7 @@ onMounted(() => {
 #info {
   display: none;
 }
+
 div {
   text-align: center;
 
