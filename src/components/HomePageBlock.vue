@@ -1,6 +1,5 @@
 <script setup>
 import RecipeCard from "./RecipeCard.vue";
-import { useRouter } from "vue-router";
 
 defineProps({
   mealType: {
@@ -12,6 +11,9 @@ defineProps({
     required: true,
   }
 });
+
+
+
 </script>
 
 <template>
@@ -20,8 +22,7 @@ defineProps({
 
     <section>
       <h2>{{ mealType }} Recipes</h2>
-<!--      <router-link :to="{ name:'SortedRecipes', params: {mealType: 'Dinners'} }">See More>></router-link>-->
-      <router-link :to="{ name:'' }">See More>></router-link>
+      <router-link :to="{ name:'RecipeCategory', params: { mealType } }">See More >></router-link>
     </section>
     <div class="home-page-slider">
       <recipe-card

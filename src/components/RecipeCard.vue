@@ -31,7 +31,7 @@ defineProps({
 
 const goToDetail = (id) => {
   router.push({
-    name: 'RecipeDetail',
+    name: 'recipeDetail',
     params: {
       id: id
     },
@@ -51,9 +51,9 @@ onMounted(() => {
 
 </script>
 
-<template>
+<template class="recipe-card">
 
-  <div class="wrapper" @click="goToDetail (mealType.id)">
+  <div class="wrapper" @click.native="goToDetail(mealType.id)">
   <img :src="'../../src/assets/' + recipeImg" alt="img"/>
   <h3>{{ recipeName }}</h3>
 

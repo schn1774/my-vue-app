@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
-import SortedRecipes from "./components/SortedRecipes.vue";
 import RecipeCategory from "./components/RecipeCategory.vue";
 import RecipeDetail from "./components/RecipeDetail.vue";
 
@@ -33,38 +32,28 @@ const router = createRouter({
             }
         },
         {
-            path: '/recipes',
-            name: 'Recipes',
-            children: [
-                {
-                    path: 'recipe/:id',
-                    name: 'RecipeDetail',
-                    component: RecipeDetail,
-                    meta: {
-                        title:'Recipe Details',
-                    }
-                }
-            ]
+            path: '/:RecipeName',
+            name: 'RecipeDetail',
+            component: RecipeDetail,
+            props: true,
+            meta: {
+                title: 'Recipe Details',
+            }
         },
         {
-            path: '/sortedRecipes',
-            name: 'SortedRecipes',
-            children: [
-                {
-                    path: 'category/:mealType',
-                    name: 'RecipeCategory',
-                    component: RecipeCategory,
-                    meta: {
-                        title: 'Filtering by meal type',
-                    }
-                }
-            ]
+            path: "/:mealType",
+            name: "RecipeCategory",
+            component: RecipeCategory,
+            props: true,
+            meta: {
+                title: "Recipe Category",
+            },
         }
     ]
 })
 // "Navigation guard"
-router.beforeEach((to, from) => {
-    let title = to.meta?.title ?? 'Default Title'
-    document.title = title + ' | ' + 'Colleen Schneider'
-})
+// router.beforeEach((to, from) => {
+//     let title = to.meta?.title ?? 'Default Title'
+//     document.title = title + ' | ' + 'Colleen Schneider'
+// })
 export default router

@@ -1,14 +1,15 @@
 <script setup>
-import recipes from "../MOCK_DATA.js";
-import RecipeCard from "./RecipeCard.vue";
-import {useRoute} from "vue-router";
 import { onMounted } from "vue";
+import recipes from "../MOCK_DATA.js";
+import {useRoute} from "vue-router";
+import RecipeCard from "./RecipeCard.vue";
+
+
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 import MOCK_DATA from "../MOCK_DATA.js";
 
 const router = useRoute();
 const route = useRoute();
-
 const paramId = Number(route.params.id);
 const recipe = recipes.data.filter(recipe => recipe.id === paramId)[0]
 
