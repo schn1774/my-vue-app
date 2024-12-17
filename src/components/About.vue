@@ -22,7 +22,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
         you don’t need a gourmet kitchen to make great food.
         When Lee Funke isn’t cooking up a storm, they enjoy exploring new coffee shops, binge-watching
         cooking shows, or playing intramural sports.
-        Follow Lee Funke for more tips, tricks, and meal ideas on [social media handles or website].
+        Follow Lee Funke for more tips, tricks, and meal ideas on social media.
       </p>
     </div>
     </body>
@@ -32,6 +32,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 <style scoped>
 body {
   margin: 1rem;
+  padding: 1rem;
 }
 
 /* Default (for smaller screens) */

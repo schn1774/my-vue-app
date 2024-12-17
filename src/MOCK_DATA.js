@@ -1,7 +1,7 @@
 const data = [
     {
         "id": "1",
-        "mealType": "Dinner",
+        "mealType": "DINNER",
         "recipe_name": "Copy Cat PF Chang Lettuce Wraps",
         "prep_time": "5 min",
         "cook_time": "20 min",
@@ -38,15 +38,15 @@ const data = [
             "Make it gluten-free: use tamari instead of soy sauce and a gluten-free hoisin sauce.",
             "Make it vegetarian: swap the ground chicken for a plant-based ground or ground tofu."
         ],
-        nutrition: {
-        serving: "1g",
-        calories: "262 kcal",
-        carbohydrates: "16g",
-        protien: "24 g",
-        fat: "12 g",
-        fiber: "2 g",
-        sugar: "6 g"
-        }
+
+        "serving": "1 g",
+        "calories": "262 kcal",
+        "carbohydrates": "16 g",
+        "protein": "24 g",
+        "fat": "12 g",
+        "fiber": "2 g",
+        "sugar": "6 g"
+
     },
     {
         "id": "2",
@@ -97,18 +97,16 @@ const data = [
             "You can use chicken thighs or chicken breasts for this recipe.",
             "If you don’t have sriracha or Gochujang you can use garlic chili sauce.",
         ],
-        nutrition: {
-            calories: "524 kcal",
-            carbohydrates: "56g",
-            protien: "46 g",
-            fat: "13 g",
-            fiber: "1 g",
-            sugar: "26 g"
-        }
+            "calories": "524 kcal",
+            "carbohydrates": "56 g",
+            "protein": "46 g",
+            "fat": "13 g",
+            "fiber": "1 g",
+            "sugar": "26 g"
     },
     {
         "id": 3,
-        "mealType": "Dinner",
+        "mealType": "dinner",
         "recipe_name": "Mexican Ground Beef Skillet",
         "prep_time": "10 min",
         "cook_time": "20 min",
@@ -141,14 +139,14 @@ const data = [
             "Skillet size: we used a 16-inch skillet, but if you use something smaller, just make sure it is deep enough. A dutch oven would work perfectly!",
             "Nutrition information includes our homemade taco seasoning recipe.",
         ],
-        nutrition: {
-            calories: "379 kcal",
-            carbohydrates: "28 g",
-            protien: "27 g",
-            fat: "16 g",
-            fiber: "6 g",
-            sugar: "4 g"
-        }
+
+        "calories": "379 kcal",
+        "carbohydrates": "28 g",
+        "protein": "27 g",
+        "fat": "16 g",
+        "fiber": "6 g",
+        "sugar": "4 g"
+
     },
     {
         "id": 4,
@@ -180,14 +178,13 @@ const data = [
         tipsNotes: [
             "none"
         ],
-        nutrition: {
-            calories: "389 kcal",
-            carbohydrates: "49 g",
-            protien: "8 g",
-            fat: "20 g",
-            fiber: "5 g",
-            sugar: "18 g"
-            },
+
+        "calories": "389 kcal",
+        "carbohydrates": "49 g",
+        "protein": "8 g",
+        "fat": "20 g",
+        "fiber": "5 g",
+        "sugar": "18 g"
     },
     {
         "id": 5,
@@ -224,14 +221,13 @@ const data = [
             "We do not recommend using rolled oats. Old-fs rolled oats are would be too tough in these oats.",
             "Be sure you let the oat cups set and firm up long enough before storing them in the freezer.",
         ],
-        nutrition: {
-            calories: "311 kcal",
-            carbohydrates: "30 g",
-            protien: "7 g",
-            fat: "20 g",
-            fiber: "4 g",
-            sugar: "19 g"
-        },
+
+        "calories": "311 kcal",
+        "carbohydrates": "30 g",
+        "protein": "7 g",
+        "fat": "20 g",
+        "fiber": "4 g",
+        "sugar": "19 g",
     },
     {
         "id": 6,
@@ -260,14 +256,12 @@ const data = [
             "You could also use chocolate protein powder in this recipe.",
             "You can swap the Rice Chex out for Corn Chex or Wheat Chex, too.",
         ],
-        nutrition: {
-            calories: "367 kcal",
-            carbohydrates: "31 g",
-            protien: "15 g",
-            fat: "22 g",
-            fiber: "3 g",
-            sugar: "11 g"
-        },
+        "calories": "367 kcal",
+        "carbohydrates": "31 g",
+        "protein": "15 g",
+        "fat": "22 g",
+        "fiber": "3 g",
+        "sugar": "11 g",
     },
     {
         "id": 7,
@@ -298,14 +292,13 @@ const data = [
         tipsNotes: [
             "*We used very moist dates. You may need to add a teaspoon of water to the food processor if your dates are dry.",
         ],
-        nutrition: {
-            calories: "242 kcal",
-            carbohydrates: "39 g",
-            protien: "4 g",
-            fat: "10 g",
-            fiber: "5 g",
-            sugar: "31 g"
-        },
+        "calories": "242 kcal",
+        "carbohydrates": "39 g",
+        "protein": "4 g",
+        "fat": "10 g",
+        "fiber": "5 g",
+        "sugar": "31 g"
+
     },
     {
         "id": 8,
@@ -351,14 +344,14 @@ const data = [
             "Pumpkin pie spice can be used in place of the ground cinnamon and nutmeg.",
             "Skip the parchment paper and spray the dish with cooking spray.",
         ],
-        nutrition: {
-            calories: "398 kcal",
-            carbohydrates: "54 g",
-            protien: "6 g",
-            fat: "18 g",
-            fiber: "2 g",
-            sugar: "25 g"
-        },
+
+        "calories": "398 kcal",
+        "carbohydrates": "54 g",
+        "protein": "6 g",
+        "fat": "18 g",
+        "fiber": "2 g",
+        "sugar": "25 g"
+
     },
     {
         "id": 9,

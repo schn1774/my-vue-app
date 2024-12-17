@@ -1,34 +1,33 @@
 <script setup>
-import {useRoute, useRouter} from 'vue-router'
-import mealType from "../MOCK_DATA.js";
-import {onMounted} from "vue";
+import {useRouter} from 'vue-router'
 import helpers from "../utils/helpers.js";
 
 const router = useRouter()
-const route = useRoute()
 
-const props = defineProps({
+
+defineProps({
   recipeName: {
-    type: Object,
+    type: String,
     required: true
   },
   prepTime: {
-    type: Object,
+    type: String,
     required: true
   },
   cookTime: {
-    type: Object,
+    type: String,
     required: true
   },
   servings: {
-    type: Object,
+    type: String,
     required: true
   },
   recipeImg: {
-    type: Object,
+    type: [String, Object],
     required: true
   }
 })
+
 
 const goToDetail = (recipeName) => {
   router.push({
@@ -59,6 +58,7 @@ const goToDetail = (recipeName) => {
 </template>
 
 <style scoped>
+
 #info {
   display: none;
 }

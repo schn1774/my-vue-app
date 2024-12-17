@@ -41,6 +41,7 @@ defineProps({
 
 <style scoped>
 /* Mobile first */
+
 body {
   //background-color: #ffefcc;
   padding: 1rem;
