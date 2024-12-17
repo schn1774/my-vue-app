@@ -42,7 +42,7 @@ defineProps({
 <style scoped>
 /* Mobile first */
 body {
-  background-color: #ffefcc;
+  //background-color: #ffefcc;
   padding: 1rem;
 }
 section {

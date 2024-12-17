@@ -18,8 +18,9 @@ const dessertRecipes = recipes.filter(recipe => recipe.mealType === 'Dessert');
     <home-page-block :mealType="'Dinner'" :recipes="dinnerRecipes" />
 
     <!-- Breakfast Block -->
+    <div class="alt">
     <home-page-block :mealType="'Breakfast'" :recipes="breakfastRecipes" />
-
+    </div>
     <!-- Dessert Block -->
     <home-page-block :mealType="'Dessert'" :recipes="dessertRecipes" />
 
@@ -28,6 +29,11 @@ const dessertRecipes = recipes.filter(recipe => recipe.mealType === 'Dessert');
 </template>
 
 <style scoped>
-
+  template {
+    background-color: #ffefcc;
+  }
+  .alt {
+    background-color: #fff5e6;
+  }
 
 </style>

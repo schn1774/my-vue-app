@@ -1,7 +1,7 @@
 const data = [
     {
         "id": "1",
-        "mealType": "dinner",
+        "mealType": "Dinner",
         "recipe_name": "Copy Cat PF Chang Lettuce Wraps",
         "prep_time": "5 min",
         "cook_time": "20 min",
@@ -14,7 +14,17 @@ const data = [
             "3 cloves of garlic",
             "1 TBS rice vinegar",
             "2 TBS water",
-            "1 tsp cornstarch"
+            "1 tsp cornstarch",
+            "2 teaspoons sesame oil",
+            "8 oz. white mushrooms, minced",
+            "1/4 teaspoon salt",
+            "5 oz. water chestnuts, drained and minced",
+            "1 lb. ground chicken",
+            "1 tablespoon soy sauce",
+            "2 tablespoons chopped fresh Thai basil",
+            "2 tablespoons chopped fresh cilantro",
+            "1 head butter lettuce",
+            "diced green onions, for garnish"
         ],
         instructions: [
             "First, make the sauce. Place all the ingredients for the sauce into a small bowl. Whisk until the corn starch has dissolved and then set aside.",
@@ -29,19 +39,72 @@ const data = [
             "Make it vegetarian: swap the ground chicken for a plant-based ground or ground tofu."
         ],
         nutrition: {
-            serving: "1g",
-            calories: "262kcal",
-            carbohydrates: "16g",
+        serving: "1g",
+        calories: "262 kcal",
+        carbohydrates: "16g",
+        protien: "24 g",
+        fat: "12 g",
+        fiber: "2 g",
+        sugar: "6 g"
         }
     },
     {
         "id": "2",
-        "mealType": "dinner",
+        "mealType": "Dinner",
         "recipe_name": "Air Fryer Sesame Chicken",
         "prep_time": "15 min",
         "cook_time": "20 min",
         "servings": "4 servings",
-        "recipeImg": "air-fryer-chicken.png"
+        "recipeImg": "air-fryer-chicken.png",
+        ingredients: [
+            "3/4 cup cornstarch",
+            "2 tablespoons garlic powder",
+            ".5 teaspoons salt",
+            "½ teaspoon ground ginger",
+            "2 tablespoons white sesame seeds, separated",
+            "1.5 lbs. boneless skinless chicken breasts",
+            "2 large eggs",
+            "1 tablespoon sesame oil, separated",
+            "7 cloves garlic, peeled and minced",
+            "¼ cup soy sauce",
+            "½ cup water",
+            "⅓ cup honey",
+            "1 teaspoon fish sauce",
+            "1 tablespoon white vinegar",
+            "1 tablespoon grated white onion",
+            "1 tablespoon Gochujang, red chili paste works too",
+            "2 green onions, minced",
+        ],
+        instructions: [
+            "Preheat the air fryer to 400ºF.",
+            "Begin by adding the cornstarch to a large bowl and remove 1.5 teaspoons of the cornstarch from the bowl and set it aside for later.",
+            "Add the garlic powder, salt, ginger, and 1 tablespoon sesame seeds to the cornstarch mixture and whisk to combine. Set aside.",
+            "Add the eggs to a separate large bowl and whisk until combined.",
+            "Cut the chicken breast into 1-1.5-inch chunks and add the chicken to the bowl with the eggs. Toss the chicken with the egg mixture until the chicken is coated.",
+            "Remove the chicken pieces from the egg mixture and allow any excess egg to drip from the chicken.",
+            "Add the chicken pieces to the bowl with the cornstarch. Toss the chicken with the cornstarch mixture until the chicken is coated.",
+            "Spray the air fryer with cooking spray and then add the coated chicken pieces to the air fryer in one single layer (a few overlaps are ok). Drizzle the chicken with 2 teaspoons of sesame oil.",
+            "Air fry the chicken for 10 minutes at 400ºF. When the chicken has cooked for 10 minutes, flip the chicken over and cook it for an additional 6 minutes until golden brown and crispy.",
+            "Meanwhile, make the garlic sesame sauce. Add the remaining sesame oil to a small saucepan. When the sesame oil is fragrant add the garlic to the pan.",
+            "Sauté the garlic for 2-3 minutes and then add the soy sauce, water, honey, fish sauce, white vinegar, grated onion, and Gochuchang to the pan. Whisk the ingredients together.",
+            "Bring the sauce to a boil over medium/high heat and then turn the heat to low and let the sauce simmer for 5 minutes.",
+            "Remove ¼ cup of the sauce from the pan and add the remaining 1.5 teaspoons of cornstarch to the ¼ cup of sauce. Whisk the 2 ingredients together. It will thicken. Add it back into the saucepan and whisk the sauce together. Allow the sauce to thicken.\n" +
+            "When the chicken is golden brown and cooked through, add the chicken to a large bowl and add then add the sauce. Gently toss the chicken in the sauce until coated.",
+            "Garnish the honey sesame chicken with diced green onion and sesame seeds. Serve over rice and enjoy!",
+        ],
+        tipsNotes: [
+            "We used a 7-qt air fryer for this recipe. We suggest using a larger air fryer.",
+            "You can use chicken thighs or chicken breasts for this recipe.",
+            "If you don’t have sriracha or Gochujang you can use garlic chili sauce.",
+        ],
+        nutrition: {
+            calories: "524 kcal",
+            carbohydrates: "56g",
+            protien: "46 g",
+            fat: "13 g",
+            fiber: "1 g",
+            sugar: "26 g"
+        }
     },
     {
         "id": 3,
@@ -50,7 +113,42 @@ const data = [
         "prep_time": "10 min",
         "cook_time": "20 min",
         "servings": "6 servings",
-        "recipeImg": "mexican-skillet.png"
+        "recipeImg": "mexican-skillet.png",
+        ingredients: [
+            "1 tablespoon olive oil",
+            "1 tablespoon minced garlic",
+            "1/2 medium yellow onion, minced",
+            "2 large bell peppers, diced",
+            "1 lb. 85% ground beef",
+            "3 tablespoons homemade taco seasoning",
+            "1/2 cup tomato sauce",
+            "2 tablespoons green chiles",
+            "15 oz. canned black beans, drained and rinsed",
+            "1 cup quick-cooking brown rice, quick-cooking white rice works too!",
+            "1.5 cups beef broth, any kind",
+            "1/2 cup Mexican shredded cheddar cheese",
+        ],
+        instructions: [
+            "Heat olive oil over medium/high heat in a large nonstick skillet*.",
+            "When olive oil is fragrant, add garlic, onion, and bell pepper. Saute for 3-5 minutes.",
+            "Then, move veggies to the side and add in ground beef. Saute ground beef for 7-9 minutes, or until fully cooked. Mix everything together in the pan.",
+            "Once the beef is fully cooked, add taco seasoning, tomato sauce, green chiles, and black beans and cook for a few minutes. Then, add in quick-cooking rice and broth. Bring to a boil over medium/high heat.",
+            "Once boiling, turn down to low and cover. Let simmer for around 20 minutes or until the rice has softened and absorbed the majority of the liquid.",
+            "Sprinkle cheese on top of skillet and either let melt naturally or pop it in the oven at 400ºF for a few minutes to fully melt cheese.",
+            "Serve beef skillet with chips!",
+        ],
+        tipsNotes: [
+            "Skillet size: we used a 16-inch skillet, but if you use something smaller, just make sure it is deep enough. A dutch oven would work perfectly!",
+            "Nutrition information includes our homemade taco seasoning recipe.",
+        ],
+        nutrition: {
+            calories: "379 kcal",
+            carbohydrates: "28 g",
+            protien: "27 g",
+            fat: "16 g",
+            fiber: "6 g",
+            sugar: "4 g"
+        }
     },
     {
         "id": 4,
@@ -59,7 +157,37 @@ const data = [
         "prep_time": "20 min",
         "cook_time": "20 min",
         "servings": "16 servings",
-        "recipeImg": "monster-cookie-bars.png"
+        "recipeImg": "monster-cookie-bars.png",
+        ingredients: [
+            "4.5 cups quick-cooking oats, gluten-free if desired (rolled oats works too)",
+            "1 cup all-natural drippy peanut butter",
+            "1/2 cup maple syrup",
+            "1/2 cup butter, melted",
+            "2 large eggs",
+            "1 cup light brown sugar",
+            "2 teaspoons baking soda",
+            "1 cup M&Ms",
+            "1/2 cup semi-sweet chocolate chip",
+        ],
+        instructions: [
+            "First, preheat the oven to 350ºF and spray a 9×13-inch baking dish with cooking spray.",
+            "Add oats, peanut butter, maple syrup, melted butter, eggs, brown sugar, and baking soda to a large bowl and mix with a wooden spoon to combine. The batter should be thick like cookie dough.",
+            "Then, add in M&M’s and chocolate chips. Mix again.",
+            "Transfer dough into the baking dish and use your wooden spoon (or hands) to press the batter firmly into the dish.",
+            "Bake at 350ºF for around 17-20 minutes or until the sides begin to turn golden brown and it is firm to touch.",
+            "Let monster bars cool for at least 30 minutes to 1 hour before slicing and serving.",
+],
+        tipsNotes: [
+            "none"
+        ],
+        nutrition: {
+            calories: "389 kcal",
+            carbohydrates: "49 g",
+            protien: "8 g",
+            fat: "20 g",
+            fiber: "5 g",
+            sugar: "18 g"
+            },
     },
     {
         "id": 5,
@@ -68,7 +196,42 @@ const data = [
         "prep_time": "35 min",
         "cook_time": "0 min",
         "servings": "12 servings",
-        "recipeImg": "peanut-butter-oat-cups.png"
+        "recipeImg": "peanut-butter-oat-cups.png",
+        ingredients: [
+            "2 cups quick-cooking oats",
+            "½ cup honey",
+            "⅓ cup all-natural, creamy peanut butter",
+            "⅓ cup chopped peanuts",
+            "Optional: 1-2 teaspoons water",
+            "6 oz. dark chocolate, chopped",
+            "2 teaspoons coconut oil",
+            "½ cup all-natural, creamy peanut butter",
+            "1 teaspoon coconut oil",
+            "¼ cup mini chocolate chips",
+        ],
+        instructions: [
+            "Line a metal muffin pan with paper liners or use a silicon muffin pan (no need to line the silicone pan).",
+            "First, make the oat layer. Add the quick-cooking oats, honey, peanut butter, and peanuts to a bowl and stir all of the ingredients together until combined. If it seems dry, add 1 to 2 teaspoons of water. Scoop about 2 tablespoons of the oats into the bottom of each muffin cup and firmly press them into the cup.",
+            "Next, mix the chocolate layer. Transfer the chocolate and coconut oil into a microwave-safe bowl. Heat the chocolate on high for 20-second increments until the chocolate is melted. Be sure to stir the chocolate and coconut oil in between each increment.",
+            "Scoop 2 teaspoons of the melted chocolate and add it on top of the oat layer. Swirl the muffin pan in a circle to easily distribute the chocolate over the oats. If there is any melted chocolate left in the bowl evenly distribute the chocolate into each cup. Place the muffin pan in the freezer for 5 minutes.",
+            "Finally, make the peanut butter layer. Add the creamy peanut butter and coconut oil into a separate microwave-safe bowl and microwave the mixture for 15 seconds. Stir until well combined. Add 2 teaspoons of the peanut butter mixture to the top of the chocolate layer. Swirl the pan again to even out the peanut butter. Then, add mini chocolate chips to the top of each cup.",
+            "Place the muffin tin in the freezer for at least 30 minutes to an hour to set.",
+            "When the oat cups have set remove them from the muffin pan and transfer them into a freezer bag and store the oat cups in the freezer.",
+            ],
+        tipsNotes: [
+            "We used chopped chocolate pieces, but feel free to use chocolate chips. Use a kitchen scale to weigh the chocolate chips.",
+            "If you don’t like dark chocolate you can use milk chocolate instead.",
+            "We do not recommend using rolled oats. Old-fs rolled oats are would be too tough in these oats.",
+            "Be sure you let the oat cups set and firm up long enough before storing them in the freezer.",
+        ],
+        nutrition: {
+            calories: "311 kcal",
+            carbohydrates: "30 g",
+            protien: "7 g",
+            fat: "20 g",
+            fiber: "4 g",
+            sugar: "19 g"
+        },
     },
     {
         "id": 6,
@@ -77,7 +240,34 @@ const data = [
         "prep_time": "15 min",
         "cook_time": "2 min",
         "servings": "10 servings",
-        "recipeImg": "protein-puppy-chow.png"
+        "recipeImg": "protein-puppy-chow.png",
+        ingredients: [
+            "1 cup semi-sweet chocolate chips",
+            "1 cup all-natural drippy peanut butter",
+            "2 teaspoons coconut oil",
+            "6-7 cups Rice Chex cereal",
+            "1 cup vanilla protein powder",
+        ],
+        instructions: [
+            "Add chocolate chips, peanut butter, and coconut oil to a microwave-safe bowl. Microwave the mixture in 20-second increments, stirring after each increment, until the mixture is melted and glossy. This will take around 2 minutes.",
+            "Add 3 cups of the Chex to the bottom of a large bowl. Pour half of the melted peanut butter and chocolate over the Chex. Fold the ingredients together until coated.",
+            "Add the rest of the Chex and cover with the remaining melted peanut butter and chocolate. Fold until the second layer is coated. It’s okay if there are chunks of Chex stuck together.",
+            "To coat the chex with protein powder, leave the mixture in the bowl or transfer it to a paper bag. Add ½ cup of the protein powder to the mixture and if it’s in a bowl, gently stir until coated with protein powder. Add the second half cup of protein powder and toss again. If using a paper bag, pour all the protein powder into the bag. Roll the top over and shake the bag until the Chex are coated.",
+            "Let the puppy chow cool before storing it in an airtight container in a cool and dry place.",
+        ],
+        tipsNotes: [
+            "The flavor of this puppy chow will change based on what protein powder is used. We tested this recipe with Garden of Life Whey Vanilla and Vital Protein Vanilla Collagen. Both were delicious.",
+            "You could also use chocolate protein powder in this recipe.",
+            "You can swap the Rice Chex out for Corn Chex or Wheat Chex, too.",
+        ],
+        nutrition: {
+            calories: "367 kcal",
+            carbohydrates: "31 g",
+            protien: "15 g",
+            fat: "22 g",
+            fiber: "3 g",
+            sugar: "11 g"
+        },
     },
     {
         "id": 7,
@@ -86,7 +276,36 @@ const data = [
         "prep_time": "20 min",
         "cook_time": "0 min",
         "servings": "16 servings",
-        "recipeImg": "chocolate-coconut-energy-bars.png"
+        "recipeImg": "chocolate-coconut-energy-bars.png",
+        ingredients: [
+            "30 medjool dates, ~2 cups packed*",
+            "1.5 cups raw cashews",
+            "1 teaspoon vanilla extract",
+            "1/3 cup cocoa powder",
+            "1/8 teaspoon sea salt",
+            "2 cups of shredded unsweetened coconut",
+        ],
+        instructions: [
+            "Begin by pitting 30 dates. Make sure your dates are soft and squishy. Place dates into a high-speed food processor and then add raw cashews and vanilla.",
+            "Blend on high for 2 to 3 minutes, stopping a few times to scrape the sides.",
+            "Once the dates and cashews are combined, add cocoa powder and salt and blend until combined. If your dates aren’t soft enough, you may need to add a teaspoon or two of water in order to get a sticky dough.",
+            "Finally, add in shredded coconut and blend one more time. You can either leave your coconut more whole or fully pulverize into the rest of the bars.",
+            "Once combined, your dough should be soft and feel like cookie dough.",
+            "Line a 9×9-inch pan with parchment paper and then place dough in pan. Use your hands or a spatula to spread dough evenly into pan. The goal is to get everything to be the same height. Top with a little more shredded coconut and use your hands or spatula to press into dough.",
+            "Before placing in the freezer, use a spatula to round the edges of the bars. Place in freezer for 30-minutes to an hour.",
+            "Remove from freezer and take bars out of the pan. Cut the bars in half and then slice each half into 8ths. Enjoy!",
+        ],
+        tipsNotes: [
+            "*We used very moist dates. You may need to add a teaspoon of water to the food processor if your dates are dry.",
+        ],
+        nutrition: {
+            calories: "242 kcal",
+            carbohydrates: "39 g",
+            protien: "4 g",
+            fat: "10 g",
+            fiber: "5 g",
+            sugar: "31 g"
+        },
     },
     {
         "id": 8,
@@ -95,7 +314,51 @@ const data = [
         "prep_time": "20 min",
         "cook_time": "45 min",
         "servings": "9 servings",
-        "recipeImg": "pumpkin-coffee-cake.png"
+        "recipeImg": "pumpkin-coffee-cake.png",
+        ingredients: [
+            "½ cup rolled oats",
+            "¼ cup all-purpose flour",
+            "¼ cup light brown sugar",
+            "3 tablespoons cold unsalted butter",
+            "1 teaspoon ground cinnamon",
+            "1 teaspoon vanilla extract",
+            "2 cups all-purpose flour",
+            "1 teaspoon baking powder",
+            "½ teaspoon baking soda",
+            "½ teaspoon sea salt",
+            "2 teaspoons ground cinnamon",
+            "¼ teaspoon ground nutmeg",
+            "½ cup light brown sugar",
+            "¼ cup maple syrup",
+            "½ cup avocado oil",
+            "2 teaspoons vanilla extract",
+            "2 large eggs",
+            "1 cup pumpkin puree",
+            "¼ cup 5% Greek yogurt",
+        ],
+        instructions: [
+            "Preheat the oven to 350℉ and line an 8×8-inch dish with parchment paper. Set aside.",
+            "Prepare the streusel topping. Add the rolled oats, flour, brown sugar, butter, cinnamon, and vanilla extract to a mixing bowl. Use a spoon (or your hands work best) and cut the ingredients together until a crumble forms. This may take 4-5 minutes Set streusel topping aside for later.",
+            "Next, add the flour, baking powder, baking soda, salt, and cinnamon into a bowl and toss together. Set aside.",
+            "In a separate bowl, cream the brown sugar, maple syrup, and avocado oil with an electric mixer.",
+            "Next, add the vanilla extract, eggs, pumpkin puree, and Greek yogurt and mix to combine.",
+            "Slowly add the dry ingredients to the wet and mix until combined.",
+            "Transfer the batter to the baking dish and top with the streusel topping. Bake the cake for 20 minutes, cover it with a tin foil tent, and bake for another 20 minutes. Remove the cake from the oven if the middle of the cake is mostly baked (it will continue to bake for a few minutes after you remove it from the oven).",
+            "Let the cake cool for 15 minutes before serving.",
+        ],
+        tipsNotes: [
+            "Wait until the cake is completely cooled before you cut into it. It may be crumbly while it is warm.",
+            "Pumpkin pie spice can be used in place of the ground cinnamon and nutmeg.",
+            "Skip the parchment paper and spray the dish with cooking spray.",
+        ],
+        nutrition: {
+            calories: "398 kcal",
+            carbohydrates: "54 g",
+            protien: "6 g",
+            fat: "18 g",
+            fiber: "2 g",
+            sugar: "25 g"
+        },
     },
     {
         "id": 9,
@@ -104,7 +367,27 @@ const data = [
         "prep_time": "5 min",
         "cook_time": "0 min",
         "servings": "2 servings",
-        "recipeImg": "easy-banana-smoothie.png"
+        "recipeImg": "easy-banana-smoothie.png",
+        ingredients: [
+            "2 cups frozen sliced bananas",
+            "1/2 cup nonfat plain Greek yogurt",
+            "1/2 tablespoon ground flax seeds",
+            "1 cup plain, unsweetened almond milk",
+            "1 teaspoon vanilla extract",
+        ],
+        instructions: [
+            "Add all ingredients into a high speed blender.",
+            "Blend on high until smooth. Option to add more milk to thin things out or more frozen banana for a thicker smoothie.",
+        ],
+        tipsNotes: [
+            "Protein: feel free to add a serving of protein powder. Use vanilla to keep the banana-y flavor or chocolate to make it taste like a chocolate milk shake!",
+        ],
+        "calories": "200 kcal",
+        "carbohydrates": "34 g",
+        "protein": "11 g",
+        "fat": "3 g",
+        "fiber": "4 g",
+        "sugar": "21 g"
     }
 ]
 

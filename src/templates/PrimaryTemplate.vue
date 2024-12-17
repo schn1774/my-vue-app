@@ -19,7 +19,7 @@
     </nav>
 
     <div id="header-container" class="header-container">
-      <h1>easy, healthy recipes for students.</h1>
+
     </div>
     <section class="main">
       <slot/>
@@ -61,7 +61,7 @@ section.primary-template {
     color: white;
   }
   .logo-container{
-    margin: 0rem;
+    margin: 0;
 
   }
   nav.top {
@@ -81,6 +81,7 @@ section.primary-template {
     .items {
       display: flex;
       justify-content: space-between;
+      margin-right: .5rem;
 
 
       a {
@@ -105,8 +106,7 @@ section.primary-template {
 
 
   div.header-container{
-
-    height: 0px;
+    height: 0;
   }
 
   section.main {
@@ -134,7 +134,7 @@ section.primary-template {
 
   /* Override in tablet & up */
   @media screen and (width > 500px) {
-    #header-container { display: block;
+    #header-container { display: none;
     }
     * {
       //border: 1px solid black;
@@ -145,7 +145,9 @@ section.primary-template {
       min-height: 175px;
       width: 100%;
       text-align: initial;
+      box-sizing: border-box;
       padding: 3rem;
+      margin: 0;
       outline: black solid 1px;
       background-image: url("/src/assets/header-background.png");
       background-size: cover;
@@ -172,8 +174,10 @@ section.primary-template {
 
     /* Override in desktop and up */
     @media screen and (width > 700px) {
+      #header-container { display: block;
+      }
       section.main {
-        margin: 0 7%;
+        padding: 0 7%;
       }
     }
   }

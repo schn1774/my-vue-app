@@ -1,16 +1,20 @@
 
-a {
-    font: #382005;
+:root {
+    color: #382005;
+    font-family: PT Sans Caption, Arial, Geneva, Helvetica, sans-serif, serif;
 }
     body {
         font-size: 16px;
-        font: #382005;
+        color: #382005;
         margin: 0 auto;
     }
     header {
-
         font-size: clamp(2rem, 2.5vw, 3rem);
     }
+    h2 {
+        font-size: clamp(1.5rem, 2vw, 2.25rem);
+    }
+
 
 
 

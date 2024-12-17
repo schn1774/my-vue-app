@@ -38,17 +38,6 @@ const goToDetail = (recipeName) => {
     },
   })
 }
-
-// const paramId = route.params.id;
-// const recipe = mealType.data.filter(mealType => mealType.id === paramId)[0]
-//
-// onMounted(() => {
-//   if (!recipe) {
-//     router.push({
-//       name: 'Home'
-//     })
-//   }
-// })
 </script>
 
 <template class="recipe-card">
@@ -105,7 +94,7 @@ div {
       justify-content: space-around;
 
       padding: 0;
-      margin: 1rem;
+      margin: .75rem;
     }
 
     img {
@@ -131,10 +120,5 @@ div {
     padding: .5rem;
 
   }
-
-  /*.item::before first-child {
-    border-right: none;
-  } probs need to delete*/
-
 }
 </style>

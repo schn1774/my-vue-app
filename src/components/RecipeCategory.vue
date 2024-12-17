@@ -1,7 +1,6 @@
 <script setup>
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 import RecipeCard from "./RecipeCard.vue";
-import HomePageBlock from "./HomePageBlock.vue";
 import recipesFile from "../MOCK_DATA.js";
 import {useRoute} from "vue-router";
 const recipes = recipesFile.data
@@ -32,3 +31,13 @@ let filteredRecipes = recipes.filter(recipe => recipe.mealType.toLowerCase() ===
 </template>
 
 
+<style scoped>
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+</style>
